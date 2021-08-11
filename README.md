@@ -48,7 +48,7 @@
 
 - Mobile View
 
-[Link to Wireframe](url)
+[Link to Wireframe](https://www.figma.com/file/PsJCzlGJS5qx6lpwzYuI0z/myNBAshot-mobile?node-id=0%3A1)
 
 #### Component Tree
 
