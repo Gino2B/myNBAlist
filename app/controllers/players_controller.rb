@@ -33,16 +33,16 @@ class PlayersController < ApplicationController
     render json: "DELETED"
   end
 
-  # # CUSTOM METHOD
-  # def add_flavor_to_food
-  #   flavor = Flavor.find_by(name: flavor_params[:name])
-  #   if !@food.flavors.include? flavor
-  #     @food.flavors.push(flavor)
-  #     render json: @food, include: :flavors
-  #   else
-  #     render json: @food, include: :flavors
-  #   end
-  # end
+  # CUSTOM METHOD
+  def add_moment_to_player
+    moment = Moment.find_by(vid_link: moment_params[:vid_link])
+    if !@player.moments.include? moment
+      @player.moments.push(moment)
+      render json: @player, include: :moments
+    else
+      render json: @player, include: :moments
+    end
+  end
 
   private
 
@@ -50,9 +50,9 @@ class PlayersController < ApplicationController
     params.require(:player).permit(:name, :bio, :team)
   end
 
-  # def flavor_params
-  #   params.require(:flavor).permit(:name)
-  # end
+  def moment_params
+    params.require(:moment).permit(:vid_link)
+  end
 
   def get_player
     @player = Player.find(params[:id])

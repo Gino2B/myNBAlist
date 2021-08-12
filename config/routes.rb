@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   resources :users, only: [:create]
   post "/users/login", to: "users#login"
   get "/users/verify", to: "users#verify"
+
+  put "/players/:id/add_moment", to: "players#add_moment_to_player"
   resources :players
   resources :moments
 end
