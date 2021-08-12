@@ -26,7 +26,7 @@ const Players = () => {
           key={player.id}
           className={i % 2 === 0 ? "evenClass" : "oddClass"}
         >
-          <Link to={`/player/${player.id}`}>
+          <Link to={`/players/${player.id}`}>
             <img src={`${player.image_url}`} alt={`${player.name} img`}></img>
             <div>{player.name}</div>
             <div>{player.team}</div>

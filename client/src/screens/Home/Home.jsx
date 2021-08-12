@@ -3,10 +3,10 @@ const Home = () => {
     <>
       <header>
         {/* <iframe
-        width="420"
-        height="315"
-        src="https://www.youtube.com/embed/QsBuiVBEaLk?autoplay=1&mute=1"
-      ></iframe> */}
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/QsBuiVBEaLk?autoplay=1&mute=1"
+        ></iframe> */}
         <img
           src="https://media.giphy.com/media/MB1KZC5SbTo3arEv6k/giphy.gif"
           alt="header-gif"
