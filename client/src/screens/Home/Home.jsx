@@ -7,7 +7,10 @@ const Home = () => {
         height="315"
         src="https://www.youtube.com/embed/QsBuiVBEaLk?autoplay=1&mute=1"
       ></iframe> */}
-        <img src="https://media.giphy.com/media/MB1KZC5SbTo3arEv6k/giphy.gif" />
+        <img
+          src="https://media.giphy.com/media/MB1KZC5SbTo3arEv6k/giphy.gif"
+          alt="header-gif"
+        />
         <div>
           <div>DONT MISS A MOMENT</div>
           <div>_</div>
@@ -26,10 +29,16 @@ const Home = () => {
           to keep track of all the dope moments you’ve witnessed from that
           player!
         </div>
-        <img src="https://s.hdnux.com/photos/44/07/63/9469165/9/rawImage.jpg" />
+        <img
+          src="https://s.hdnux.com/photos/44/07/63/9469165/9/rawImage.jpg"
+          alt="section1image"
+        />
       </section>
       <section>
-        <img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2016_15/1494926/ss-160413-kobe-bryant-mn-13.jpg" />
+        <img
+          src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2016_15/1494926/ss-160413-kobe-bryant-mn-13.jpg"
+          alt="section2image"
+        />
         <div>SHARE WITH FRIENDS</div>
         <div>
           Start the conversation. Compare your favorite moments showcase with

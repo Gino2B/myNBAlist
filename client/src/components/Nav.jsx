@@ -2,13 +2,13 @@ import { NavLink } from "react-router-dom";
 
 const authenticatedOptions = (
   <>
-    <NavLink>Sign Out</NavLink>
+    <NavLink to="/sign-out">Sign Out</NavLink>
   </>
 );
 const unauthenticatedOptions = (
   <>
-    <NavLink>Login</NavLink>
-    <NavLink>Sign Up</NavLink>
+    <NavLink to="/login">Login</NavLink>
+    <NavLink to="/sign-up">Sign Up</NavLink>
   </>
 );
 function Nav() {
@@ -22,7 +22,7 @@ function Nav() {
       <div>
         <NavLink to="/players">Players</NavLink>
         <NavLink to="/add">Add Players</NavLink>
-        <NavLink to="/user/:id">My Profile</NavLink>
+        <NavLink to="/user/">My Profile</NavLink>
       </div>
       <div></div>
     </nav>

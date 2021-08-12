@@ -4,7 +4,7 @@ class PlayersController < ApplicationController
 
   def index
     players = Player.all
-    render json: players
+    render json: players, include: :moments
   end
 
   def show
