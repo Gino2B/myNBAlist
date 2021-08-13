@@ -7,6 +7,7 @@ import Players from "../screens/Players/Players";
 import SignUp from "../screens/SignUp/SignUp";
 import SignOut from "../screens/SignOut/SignOut";
 import SignIn from "../screens/SignIn/SignIn";
+import UserProfile from "../screens/UserProfile/UserProfile";
 
 const Main = (props) => {
   return (
@@ -34,6 +35,9 @@ const Main = (props) => {
       </Route>
       <Route path="/sign-out">
         <SignOut setUser={props.setUser} />
+      </Route>
+      <Route path="/users/:id">
+        <UserProfile user={props.user} />
       </Route>
     </>
   );

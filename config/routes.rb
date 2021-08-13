@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get "/users/verify", to: "users#verify"
   post "/users/login", to: "users#login"
   put "/users/:id/add_player", to: "users#add_player_to_user"
+  delete "/users/:id/delete_fav/:playerid", to: "users#delete_player_from_user"
   get "/users/:id", to: "users#show"
   resources :users, only: [:create]
   put "/players/:id/add_moment", to: "players#add_moment_to_player"

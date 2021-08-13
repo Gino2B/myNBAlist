@@ -1,5 +1,10 @@
 import api from "./apiConfig";
 
+export const getOneUser = async (userID) => {
+  const res = await api.get(`/users/${userID}`);
+  return res.data;
+};
+
 export const register = async (userData) => {
   const res = await api.post("/users", { user: userData });
   const { token } = res.data;
@@ -14,6 +19,11 @@ export const addPlayerToUser = async (playerData, userID) => {
   const res = await api.put(`/users/${userID}/add_player`, {
     player: playerData,
   });
+  return res.data;
+};
+
+export const deletePlayerFromUser = async (playerID, userID) => {
+  const res = await api.delete(`/users/${userID}/delete_fav/${playerID}`);
   return res.data;
 };
 

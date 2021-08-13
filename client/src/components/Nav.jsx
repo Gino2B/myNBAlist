@@ -22,7 +22,9 @@ function Nav({ user }) {
       <div>
         <NavLink to="/players">Players</NavLink>
         <NavLink to="/add">Add Players</NavLink>
-        <NavLink to="/user/">My Profile</NavLink>
+        <NavLink to={user ? `/users/${user.id}` : "/sign-up"}>
+          My Profile
+        </NavLink>
       </div>
       <div>
         {user ? (

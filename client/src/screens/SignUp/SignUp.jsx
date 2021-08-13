@@ -9,6 +9,8 @@ const SignUp = (props) => {
     email: "",
     password: "",
     password_confirm: "",
+    image_url:
+      "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     isError: false,
     errorMsg: "",
   });
@@ -48,7 +50,7 @@ const SignUp = (props) => {
       return <button type="submit">Sign Up</button>;
     }
   };
-  const { name, email, password, passwordConfirm } = registerFormData;
+  const { name, email, password, password_Confirm } = registerFormData;
 
   return (
     <div className="signup-form">
@@ -80,8 +82,8 @@ const SignUp = (props) => {
         <input
           required
           type="password"
-          name="passwordConfirm"
-          value={passwordConfirm}
+          name="password_Confirm"
+          value={password_Confirm}
           placeholder="Confirm Password"
           onChange={handleChange}
         />

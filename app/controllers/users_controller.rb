@@ -47,6 +47,18 @@ class UsersController < ApplicationController
     end
   end
 
+  # delete "/users/:id/delete_fav/:playerid"
+  def delete_player_from_user
+    player = Player.find(params[:playerid])
+    user = User.find(params[:id])
+    if user.players.include? player
+      user.players.delete(player)
+      render json: user, include: :players
+    else
+      render json: user, include: :players
+    end
+  end
+
   # GET /users/verify
   def verify
     render json: @current_user.attributes.except("password_digest"), status: :ok
@@ -59,7 +71,7 @@ class UsersController < ApplicationController
   end
 
   def user_register_params
-    params.require(:user).permit(:name, :email, :password)
+    params.require(:user).permit(:name, :email, :password, :image_url)
   end
 
   def user_login_params
