@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <>
@@ -20,7 +22,9 @@ const Home = () => {
             own favorites.
           </div>
         </div>
-        <button>Browse Players Now</button>
+        <Link to="/players">
+          <button>Browse Players Now</button>
+        </Link>
       </header>
       <section>
         <div>CREATE A SHOWCASE</div>

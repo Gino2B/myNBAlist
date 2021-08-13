@@ -1,6 +1,11 @@
 class UsersController < ApplicationController
   before_action :authorize_request, only: [:verify]
 
+  def show
+    user = User.find(params[:id])
+    render json: user, include: :players
+  end
+
   def create
     user = User.new(user_register_params)
     if user.save
@@ -30,12 +35,28 @@ class UsersController < ApplicationController
     end
   end
 
+  # put "/users/:id/add_player"
+  def add_player_to_user
+    player = Player.find_by(name: player_params[:name])
+    user = User.find(params[:id])
+    if !user.players.include? player
+      user.players.push(player)
+      render json: user, include: :players
+    else
+      render json: user, include: :players
+    end
+  end
+
   # GET /users/verify
   def verify
     render json: @current_user.attributes.except("password_digest"), status: :ok
   end
 
   private
+
+  def player_params
+    params.require(:player).permit(:name)
+  end
 
   def user_register_params
     params.require(:user).permit(:name, :email, :password)

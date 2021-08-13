@@ -10,6 +10,13 @@ export const register = async (userData) => {
   }
 };
 
+export const addPlayerToUser = async (playerData, userID) => {
+  const res = await api.put(`/users/${userID}/add_player`, {
+    player: playerData,
+  });
+  return res.data;
+};
+
 export const login = async (userData) => {
   const res = await api.post("/users/login", { user: userData });
   const { token } = res.data;

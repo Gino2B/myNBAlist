@@ -1,5 +1,5 @@
 class PlayersController < ApplicationController
-  before_action :get_player, only: [:show, :update, :destroy]
+  before_action :get_player, only: [:show, :update, :destroy, :add_moment_to_player]
   # before_action :authorize_request, only: [:create, :update, :destroy]
 
   def index
