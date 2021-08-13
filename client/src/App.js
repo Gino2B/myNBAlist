@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const reverify = async () => {
       const currentUser = await verify();
-      user ? setUser(currentUser) : setUser(null);
+      currentUser ? setUser(currentUser) : setUser(null);
     };
     reverify();
   }, []);

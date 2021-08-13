@@ -43,7 +43,7 @@ const AlbumEdit = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <img src={`${player.image_url}`} alt={`${player.name} image`} />
+        <img src={`${player.image_url}`} alt={`${player.name}`} />
         <input
           className="input-image"
           placeholder="Image Link"
