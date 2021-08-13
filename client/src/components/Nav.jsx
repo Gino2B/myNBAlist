@@ -1,16 +1,16 @@
 import { NavLink } from "react-router-dom";
 
-const authenticatedOptions = (
-  <>
-    <NavLink to="/sign-out">Sign Out</NavLink>
-  </>
-);
-const unauthenticatedOptions = (
-  <>
-    <NavLink to="/login">Login</NavLink>
-    <NavLink to="/sign-up">Sign Up</NavLink>
-  </>
-);
+// const authenticatedOptions = (
+//   <>
+//     <NavLink to="/sign-out">Sign Out</NavLink>
+//   </>
+// );
+// const unauthenticatedOptions = (
+//   <>
+//     <NavLink to="/login">Login</NavLink>
+//     <NavLink to="/sign-up">Sign Up</NavLink>
+//   </>
+// );
 function Nav() {
   return (
     <nav>

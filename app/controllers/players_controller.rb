@@ -47,7 +47,7 @@ class PlayersController < ApplicationController
   private
 
   def player_params
-    params.require(:player).permit(:name, :bio, :team)
+    params.require(:player).permit(:name, :bio, :team, :image_url)
   end
 
   def moment_params
