@@ -6,6 +6,7 @@ import PlayerAdd from "../screens/PlayerAdd/PlayerAdd";
 import Players from "../screens/Players/Players";
 import SignUp from "../screens/SignUp/SignUp";
 import SignOut from "../screens/SignOut/SignOut";
+import SignIn from "../screens/SignIn/SignIn";
 
 const Main = (props) => {
   return (
@@ -26,6 +27,9 @@ const Main = (props) => {
         <PlayerAdd />
       </Route>
       <Route exact path="/login">
+        <SignIn setUser={props.setUser} user={props.user} />
+      </Route>
+      <Route exact path="/sign-up">
         <SignUp setUser={props.setUser} user={props.user} />
       </Route>
       <Route path="/sign-out">
