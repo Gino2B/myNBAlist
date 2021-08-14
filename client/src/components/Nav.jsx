@@ -3,7 +3,9 @@ import "./Nav.css";
 
 const authenticatedOptions = (
   <>
-    <NavLink to="/sign-out">Sign Out</NavLink>
+    <NavLink className="sign-out" to="/sign-out">
+      Sign Out
+    </NavLink>
   </>
 );
 const unauthenticatedOptions = (
