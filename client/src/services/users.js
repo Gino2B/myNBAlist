@@ -5,6 +5,11 @@ export const getOneUser = async (userID) => {
   return res.data;
 };
 
+export const updateUser = async (userData, userID) => {
+  const res = await api.put(`/users/${userID}`, { user: userData });
+  return res.data;
+};
+
 export const register = async (userData) => {
   const res = await api.post("/users", { user: userData });
   const { token } = res.data;

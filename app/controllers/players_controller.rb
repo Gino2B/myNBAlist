@@ -24,7 +24,7 @@ class PlayersController < ApplicationController
     if @player.update(player_params)
       render json: @player, status: :ok
     else
-      render json: player.errors, status: :unprocessable_entity
+      render json: @player.errors, status: :unprocessable_entity
     end
   end
 

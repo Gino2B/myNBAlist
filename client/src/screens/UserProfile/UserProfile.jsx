@@ -13,7 +13,7 @@ const UserProfile = () => {
       setUser(foundUser);
     };
     fetchUser();
-  }, [removed]);
+  }, [removed, id]);
   const handleRemove = async (playerID) => {
     await deletePlayerFromUser(playerID, id);
     setRemoved(!removed);
@@ -23,11 +23,14 @@ const UserProfile = () => {
       <div>
         <div>{user.name}'s Profile</div>
         <img src={`${user.image_url}`} alt={`${user.name}`} />
+        <Link to={`/users/${id}/edit`}>
+          <button>Edit Profile</button>
+        </Link>
       </div>
       <div>
         <div>Favorite Players</div>
         {user.players?.map((player) => (
-          <section>
+          <section key={player.id}>
             <img src={`${player.image_url}`} alt={`${player.name}`} />
             <div>{player.name}</div>
             <button onClick={() => handleRemove(player.id)}>Remove</button>

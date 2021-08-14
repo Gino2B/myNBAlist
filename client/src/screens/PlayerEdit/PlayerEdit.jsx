@@ -2,7 +2,7 @@ import { useParams, Redirect } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getOnePlayer, updatePlayer } from "../../services/players";
 
-const AlbumEdit = () => {
+const PlayerEdit = () => {
   const { id } = useParams();
   const [isUpdated, setIsUpdated] = useState(false);
   const [player, setPlayer] = useState({
@@ -86,4 +86,4 @@ const AlbumEdit = () => {
   );
 };
 
-export default AlbumEdit;
+export default PlayerEdit;

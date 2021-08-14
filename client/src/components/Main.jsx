@@ -8,6 +8,7 @@ import SignUp from "../screens/SignUp/SignUp";
 import SignOut from "../screens/SignOut/SignOut";
 import SignIn from "../screens/SignIn/SignIn";
 import UserProfile from "../screens/UserProfile/UserProfile";
+import UserEdit from "../screens/UserEdit/UserEdit";
 
 const Main = (props) => {
   return (
@@ -36,8 +37,11 @@ const Main = (props) => {
       <Route path="/sign-out">
         <SignOut setUser={props.setUser} />
       </Route>
-      <Route path="/users/:id">
+      <Route exact path="/users/:id">
         <UserProfile user={props.user} />
+      </Route>
+      <Route exact path="/users/:id/edit">
+        <UserEdit user={props.user} />
       </Route>
     </>
   );

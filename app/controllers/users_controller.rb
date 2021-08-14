@@ -1,9 +1,9 @@
 class UsersController < ApplicationController
   before_action :authorize_request, only: [:verify]
+  before_action :get_user, only: [:show]
 
   def show
-    user = User.find(params[:id])
-    render json: user, include: :players
+    render json: @user, include: :players
   end
 
   def create
@@ -19,8 +19,18 @@ class UsersController < ApplicationController
     end
   end
 
+  def update
+    user = User.find(params[:id])
+    if user.update(user_update_params)
+      render json: user, status: :ok
+    else
+      render json: user.errors, status: :unprocessable_entity
+    end
+  end
+
   # CUSTOM METHODS
   # POST /users/login
+
   def login
     user = User.find_by(email: user_login_params[:email])
 
@@ -66,8 +76,8 @@ class UsersController < ApplicationController
 
   private
 
-  def player_params
-    params.require(:player).permit(:name)
+  def user_update_params
+    params.require(:user).permit(:name, :image_url)
   end
 
   def user_register_params
@@ -78,8 +88,16 @@ class UsersController < ApplicationController
     params.require(:user).permit(:email, :password)
   end
 
+  def player_params
+    params.require(:player).permit(:name)
+  end
+
   def create_token(user_id)
     payload = { id: user_id, exp: 24.hours.from_now.to_i }
     JWT.encode(payload, SECRET_KEY)
+  end
+
+  def get_user
+    @user = User.find(params[:id])
   end
 end
