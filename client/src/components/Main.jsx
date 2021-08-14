@@ -14,19 +14,19 @@ const Main = (props) => {
   return (
     <>
       <Route exact path="/">
-        <Home />
+        <Home user={props.user} />
       </Route>
       <Route exact path="/players">
-        <Players />
+        <Players user={props.user} />
       </Route>
       <Route exact path="/players/:id">
-        <PlayerDetails />
+        <PlayerDetails user={props.user} />
       </Route>
       <Route exact path="/players/:id/edit">
-        <PlayerEdit />
+        <PlayerEdit user={props.user} />
       </Route>
       <Route exact path="/add">
-        <PlayerAdd />
+        <PlayerAdd user={props.user} />
       </Route>
       <Route exact path="/login">
         <SignIn setUser={props.setUser} user={props.user} />
