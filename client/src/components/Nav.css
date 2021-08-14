@@ -1,0 +1,57 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,700&family=Kanit:wght@200&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,700&family=Kanit:wght@200;400&display=swap");
+nav {
+  display: inline-flex;
+  background-color: #1f2123;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+}
+.logopicture {
+  height: 8vh;
+  display: flex;
+  align-self: center;
+}
+
+.logo {
+  font-family: "Crimson Text", serif;
+  display: flex;
+  align-items: center;
+}
+.my {
+  font-size: 28px;
+  color: #1a74e2;
+}
+
+.nba {
+  font-size: 42px;
+  color: white;
+}
+.shot {
+  font-size: 28px;
+  color: #ff0000;
+}
+
+.links {
+  font-family: "Kanit", sans-serif;
+  color: white;
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+.user-links {
+  font-family: "Kanit", sans-serif;
+  color: white;
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 400;
+}
+
+.user {
+  /* font-family: "Kanit", sans-serif; */
+  font-weight: 100;
+}

@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import "./Nav.css";
 
 const authenticatedOptions = (
   <>
@@ -16,27 +17,28 @@ function Nav({ user }) {
     <nav>
       <NavLink className="logo" to="/">
         <img
-          src="https://i.pinimg.com/474x/16/42/de/1642de414b6ac496c3a3215c68972848.jpg"
+          className="logopicture"
+          src="https://i.imgur.com/r8ZdsaU.png"
           alt="curry logo"
         />
-        <span>my</span>
-        <span>NBA</span>
-        <span>shot</span>
+        <span className="my">my</span>
+        <span className="nba">NBA</span>
+        <span className="shot">shot</span>
       </NavLink>
-      <div>
+      <div className="links">
         <NavLink to="/players">Players</NavLink>
         <NavLink to="/add">Add Players</NavLink>
         <NavLink to={user ? `/users/${user.id}` : "/sign-up"}>
           My Profile
         </NavLink>
       </div>
-      <div>
+      <div className="user-links-container">
         {user ? (
-          <div>
-            {user.name} {authenticatedOptions}
+          <div className="user-links">
+            <span className="user">{user.name}</span> {authenticatedOptions}
           </div>
         ) : (
-          unauthenticatedOptions
+          <div className="user-links">{unauthenticatedOptions}</div>
         )}
       </div>
     </nav>
