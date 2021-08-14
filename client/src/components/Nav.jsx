@@ -15,6 +15,10 @@ function Nav({ user }) {
   return (
     <nav>
       <NavLink className="logo" to="/">
+        <img
+          src="https://i.pinimg.com/474x/16/42/de/1642de414b6ac496c3a3215c68972848.jpg"
+          alt="curry logo"
+        />
         <span>my</span>
         <span>NBA</span>
         <span>shot</span>
