@@ -82,7 +82,7 @@
   margin-top: 5vh;
 }
 
-form {
+.moment-form {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -90,7 +90,7 @@ form {
   margin: 0 auto;
   width: 50vw;
 }
-form input {
+.moment-form input {
   /* padding: 1vh 3vw; */
   font-family: "Kanit", sans-serif;
   font-size: 20px;
@@ -100,14 +100,14 @@ form input {
   margin-bottom: 3vh;
 }
 
-form button {
+.moment-form button {
   color: white;
   background-color: #ff0000;
   padding: 1vh 3vw;
   margin-bottom: 5vh;
 }
 
-form button:hover {
+.moment-form button:hover {
   cursor: pointer;
   background-color: #f08080;
 }

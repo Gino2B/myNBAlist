@@ -63,7 +63,7 @@ const PlayerDetails = ({ user }) => {
           <button onClick={addToFavs}>{addedText}</button>
         </div>
         <div className="detail-info-section">
-          <div className="detail-name">{player.name?.toUpperCase()}</div>
+          <div className="detail-name">{player.name}</div>
           <div className="detail-team">{player.team}</div>
           <div className="detail-bio">{player.bio}</div>
           <Link to={`/players/${id}/edit`}>
@@ -82,7 +82,7 @@ const PlayerDetails = ({ user }) => {
           );
         })}
       </section>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="moment-form">
         <input
           className="add-moment"
           placeholder="Video Link:"

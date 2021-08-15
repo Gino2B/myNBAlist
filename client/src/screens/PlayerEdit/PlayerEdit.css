@@ -1,0 +1,77 @@
+.edit-info {
+  display: flex;
+  width: 95vw;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 5vw;
+  margin-left: 10vw;
+}
+
+.edit-picture {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  margin-right: 5vw;
+}
+
+.edit-picture img {
+  height: 25vw;
+  margin-bottom: 2vh;
+}
+
+.edit-info-section {
+  color: white;
+  font-family: "Kanit", sans-serif;
+  width: 40vw;
+}
+
+.input-image {
+  font-family: "Kanit", sans-serif;
+  font-size: 25px;
+  background-color: #101010;
+  border: 0;
+  color: white;
+}
+
+.input-name {
+  font-family: "Kanit", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 4vh;
+  background-color: #101010;
+  border: 0;
+  color: white;
+}
+
+.input-team {
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 4vh 0;
+  background-color: #101010;
+  border: 0;
+  color: white;
+}
+
+.input-bio {
+  font-family: "Kanit", sans-serif;
+  font-size: 25px;
+  margin: 4vh 0;
+  width: 45vw;
+  height: 20vh;
+  background-color: #101010;
+  overflow: hidden;
+  border: 0;
+  color: white;
+}
+
+.edit-info-section button {
+  font-family: "Rubrik", sans-serif;
+  font-size: 20px;
+  display: flex;
+  /* justify-content: center; */
+  margin: 0 auto;
+  padding: 1vh 4vw;
+  background-color: #3fa0ef;
+  color: white;
+}
