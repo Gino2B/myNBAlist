@@ -10,8 +10,12 @@ const authenticatedOptions = (
 );
 const unauthenticatedOptions = (
   <>
-    <NavLink to="/login">Login</NavLink>
-    <NavLink to="/sign-up">Sign Up</NavLink>
+    <NavLink className="login" to="/login">
+      Login
+    </NavLink>
+    <NavLink className="sign-up" to="/sign-up">
+      Sign Up
+    </NavLink>
   </>
 );
 function Nav({ user }) {

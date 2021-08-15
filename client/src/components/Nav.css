@@ -26,8 +26,10 @@ nav {
 }
 
 .nba {
-  font-size: 42px;
+  font-size: 48px;
   color: white;
+  display: flex;
+  align-self: flex-end;
 }
 .shot {
   font-size: 28px;
@@ -37,7 +39,7 @@ nav {
 .links {
   font-family: "Kanit", sans-serif;
   color: white;
-  width: 50vw;
+  width: 55vw;
   display: flex;
   justify-content: space-around;
   font-weight: bold;
@@ -46,17 +48,22 @@ nav {
 .user-links {
   font-family: "Kanit", sans-serif;
   color: white;
-  width: 20vw;
+  width: 15vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-weight: 400;
+  margin-right: 2vw;
 }
-.sign-out {
+.sign-out,
+.sign-up {
   background-color: #1a74e2;
   padding: 1vh 1vw;
 }
-
+.login {
+  background-color: #ff0000;
+  padding: 1vh 1.4vw;
+}
 .user {
   /* font-family: "Kanit", sans-serif; */
   font-weight: 100;
