@@ -84,7 +84,7 @@ const PlayerEdit = () => {
             autoFocus
             onChange={handleChange}
           />
-          <button>Changes</button>
+          <button>Add Changes</button>
         </div>
       </form>
     </div>

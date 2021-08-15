@@ -37,7 +37,7 @@
   font-family: "Kanit", sans-serif;
   font-size: 50px;
   font-weight: 900;
-  margin-bottom: 4vh;
+  margin-bottom: 3vh;
   background-color: #101010;
   border: 0;
   color: white;
@@ -47,7 +47,7 @@
   font-family: "Kanit", sans-serif;
   font-size: 40px;
   font-weight: 600;
-  margin: 4vh 0;
+  margin-bottom: 3vh;
   background-color: #101010;
   border: 0;
   color: white;
@@ -56,9 +56,9 @@
 .input-bio {
   font-family: "Kanit", sans-serif;
   font-size: 25px;
-  margin: 4vh 0;
+  margin-bottom: 3vh;
   width: 45vw;
-  height: 20vh;
+  height: 25vh;
   background-color: #101010;
   overflow: hidden;
   border: 0;
@@ -71,7 +71,7 @@
   display: flex;
   /* justify-content: center; */
   margin: 0 auto;
-  padding: 1vh 4vw;
+  padding: 1vh 2vw;
   background-color: #3fa0ef;
   color: white;
 }
