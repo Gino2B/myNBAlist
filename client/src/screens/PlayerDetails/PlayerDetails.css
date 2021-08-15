@@ -1,0 +1,113 @@
+.detail-info {
+  display: flex;
+  width: 95vw;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 5vw;
+  margin-left: 10vw;
+}
+
+.detail-picture-section {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  margin-right: 5vw;
+}
+
+.detail-picture-section img {
+  height: 25vw;
+  margin-bottom: 2vh;
+}
+
+.detail-picture-section button {
+  font-family: "Rubrik", sans-serif;
+  font-size: 20px;
+  background-color: #3fa0ef;
+  color: white;
+}
+
+.detail-info-section {
+  color: white;
+  font-family: "Kanit", sans-serif;
+  width: 40vw;
+}
+
+.detail-name {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 4vh;
+}
+
+.detail-team {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 4vh 0;
+}
+
+.detail-bio {
+  font-size: 25px;
+  margin: 4vh 0;
+}
+
+.detail-info-section button {
+  font-family: "Rubrik", sans-serif;
+  font-size: 20px;
+  display: flex;
+  /* justify-content: center; */
+  margin: 0 auto;
+  padding: 1vh 4vw;
+  background-color: #3fa0ef;
+  color: white;
+}
+
+.details-moments-section {
+  font-family: "Kanit", sans-serif;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.moments-header {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid grey;
+}
+
+.youtube-vid {
+  margin-top: 5vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 0 auto;
+  width: 50vw;
+}
+form input {
+  /* padding: 1vh 3vw; */
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  width: 20vw;
+  height: 3vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+form button {
+  color: white;
+  background-color: #ff0000;
+  padding: 1vh 3vw;
+  margin-bottom: 5vh;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: #f08080;
+}

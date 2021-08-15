@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { addMomentToPlayer, getOnePlayer } from "../../services/players";
 import { createMoment } from "../../services/moments";
 import Youtube from "react-youtube";
 import { addPlayerToUser } from "../../services/users";
+import "./PlayerDetails.css";
 
-const PlayerDetails = () => {
+const PlayerDetails = ({ user }) => {
   const [player, setPlayer] = useState([]);
+  const history = useHistory();
   const { id } = useParams();
   const [moment, setMoment] = useState({
     player_id: id,
@@ -33,15 +35,19 @@ const PlayerDetails = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    await createMoment(moment);
-    await addMomentToPlayer(moment, id);
+    const createdMoment = await createMoment(moment);
+    await addMomentToPlayer(createdMoment, id);
+    setMoment({ player_id: id, vid_link: "" });
     setCreated(!created);
   };
 
-  //COME BACK AND CHANGE THE 1 TO THE CURRENT USER ID
   const addToFavs = async () => {
-    await addPlayerToUser({ name: player.name }, 1);
-    setAddedText("Added!");
+    if (user) {
+      await addPlayerToUser({ name: player.name }, user.id);
+      setAddedText("Added!");
+    } else {
+      history.push("/sign-up");
+    }
   };
 
   const opts = {
@@ -51,25 +57,26 @@ const PlayerDetails = () => {
 
   return (
     <>
-      <header>
-        <div>
+      <header className="detail-info">
+        <div className="detail-picture-section">
           <img src={`${player.image_url}`} alt={`${player.name} img`}></img>
           <button onClick={addToFavs}>{addedText}</button>
         </div>
-        <div>
-          <div>{player.name}</div>
-          <div>{player.bio}</div>
+        <div className="detail-info-section">
+          <div className="detail-name">{player.name?.toUpperCase()}</div>
+          <div className="detail-team">{player.team}</div>
+          <div className="detail-bio">{player.bio}</div>
           <Link to={`/players/${id}/edit`}>
             <button>Edit!</button>
           </Link>
         </div>
       </header>
-      <section>
-        <div>MOMENTS</div>
+      <section className="details-moments-section">
+        <div className="moments-header">MOMENTS</div>
         {player.moments?.map((moment) => {
           const id = moment.vid_link.split("?v=")[1].substring(0, 11);
           return (
-            <div key={moment.id}>
+            <div key={moment.id} className="youtube-vid">
               <Youtube videoId={id} opts={opts} />
             </div>
           );
