@@ -1,5 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,700&family=Kanit:wght@200&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,700&family=Kanit:wght@200;400&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,700&family=Kanit:wght@200;400&display=swap"); */
 nav {
   display: inline-flex;
   background-color: #1f2123;
@@ -67,4 +67,8 @@ nav {
 .user {
   /* font-family: "Kanit", sans-serif; */
   font-weight: 100;
+}
+
+.links a:hover {
+  border-bottom: 1px solid white;
 }
