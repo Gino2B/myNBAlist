@@ -74,6 +74,7 @@ body {
 }
 
 .section-info {
+  font-family: "Rubik", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,5 +93,4 @@ body {
 }
 .section-bio {
   font-size: 22px;
-  font-weight: 200;
 }
