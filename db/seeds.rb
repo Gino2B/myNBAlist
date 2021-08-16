@@ -9,7 +9,7 @@ curry = Player.create({
   name: "Stephen Curry",
   bio: 'Wardell Stephen "Steph" Curry II is an American professional basketball player for the Golden State Warriors of the National Basketball Association. He plays the point guard position. Many analysts and players have called him the greatest shooter in NBA history.',
   team: "Golden State Warriors",
-  image_url: "https://sportshub.cbsistatic.com/i/r/2021/08/02/f4adf313-ad3f-47a7-bae2-4866b705d290/thumbnail/1200x675/c3a117591ef5fdf155e6244f1e9d3f59/steph-curry.png",
+  image_url: "https://pyxis.nymag.com/v1/imgs/8e0/18c/e542fefcbd4d20b608d37fcd882615f997-steph-curry.rsquare.w1200.jpg",
 })
 booker = Player.create({
   name: "Devin Booker",

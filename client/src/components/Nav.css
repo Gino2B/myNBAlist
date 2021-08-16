@@ -18,6 +18,7 @@ nav {
   margin-left: 3vw;
   font-family: "Crimson Text", serif;
   display: flex;
+  height: 7vh;
   align-items: center;
 }
 .my {
@@ -45,7 +46,12 @@ nav {
   font-weight: bold;
   font-size: 20px;
 }
-
+.fa-align-justify {
+  display: none;
+  text-align: right;
+  padding: 4px;
+  color: white;
+}
 .user-links {
   font-family: "Kanit", sans-serif;
   color: white;
@@ -72,4 +78,27 @@ nav {
 
 .links a:hover {
   border-bottom: 1px solid white;
+}
+@media only screen and (max-width: 768px) {
+  /* .fa-align-justify {
+    display: inline-block;
+  } */
+  .logo {
+    height: 5vh;
+  }
+  .nba {
+    font-size: 40px;
+  }
+  .logopicture {
+    height: 5vh;
+    display: flex;
+    align-self: center;
+  }
+  .links {
+    font-size: 15px;
+    width: 45vw;
+  }
+  .user-links {
+    width: 25vw;
+  }
 }
