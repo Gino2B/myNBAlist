@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Redirect } from "react-router-dom";
 import { createPlayer } from "../../services/players";
+import "./PlayerAdd.css";
 
 const PlayerAdd = () => {
   const [isCreated, setCreated] = useState(false);
@@ -33,17 +34,8 @@ const PlayerAdd = () => {
 
   return (
     <div>
-      <div>Add Player</div>
-      <form onSubmit={handleSubmit}>
-        <input
-          className="add-image"
-          placeholder="Image Link"
-          value={player.image_url}
-          name="image_url"
-          required
-          autoFocus
-          onChange={handleChange}
-        />
+      <div className="add-player">Add Player</div>
+      <form onSubmit={handleSubmit} className="add-form">
         <input
           className="add-name"
           placeholder="Name"
@@ -54,10 +46,10 @@ const PlayerAdd = () => {
           onChange={handleChange}
         />
         <input
-          className="add-bio"
-          placeholder="Bio"
-          value={player.bio}
-          name="bio"
+          className="add-image"
+          placeholder="Image Link"
+          value={player.image_url}
+          name="image_url"
           required
           autoFocus
           onChange={handleChange}
@@ -71,7 +63,16 @@ const PlayerAdd = () => {
           autoFocus
           onChange={handleChange}
         />
-        <button>Add Player</button>
+        <textarea
+          className="add-bio"
+          placeholder="Bio"
+          value={player.bio}
+          name="bio"
+          required
+          autoFocus
+          onChange={handleChange}
+        />
+        <button>Submit</button>
       </form>
     </div>
   );
