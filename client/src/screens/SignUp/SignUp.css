@@ -17,6 +17,17 @@
   background-color: #1f2123;
 }
 
+.route-login {
+  font-family: "Kanit", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+.route-to-login {
+  text-decoration: underline;
+}
+.route-to-login:hover {
+  color: #1a74e2;
+}
 .signup-name {
   text-indent: 1.5vw;
   font-family: "Kanit", sans-serif;
