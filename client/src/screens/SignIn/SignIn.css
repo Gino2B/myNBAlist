@@ -1,4 +1,4 @@
-.signup {
+.sign-in {
   font-family: "Kanit", sans-serif;
   font-size: 18px;
   margin: 3vh 0;
@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.signup-form {
+.signin-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,18 +17,7 @@
   background-color: #1f2123;
 }
 
-.route-login {
-  font-family: "Kanit", sans-serif;
-  font-size: 18px;
-  color: white;
-}
-.route-to-login {
-  text-decoration: underline;
-}
-.route-to-login:hover {
-  color: #1a74e2;
-}
-.signup-name {
+.signin-email {
   text-indent: 1.5vw;
   font-family: "Kanit", sans-serif;
   width: 75%;
@@ -40,25 +29,7 @@
   margin-top: 5vh;
   color: white;
 }
-.signup-name:focus {
-  outline: none;
-}
-.signup-input {
-  text-indent: 1.5vw;
-  font-family: "Kanit", sans-serif;
-  width: 75%;
-  height: 8vh;
-  border: 0;
-  background-color: #1f2123;
-  font-size: 24px;
-  border-top: 1px solid white;
-  /* margin-top: 5vh; */
-  color: white;
-}
-.signup-input:focus {
-  outline: none;
-}
-.signup-password {
+.signin-password {
   text-indent: 1.5vw;
   font-family: "Kanit", sans-serif;
   width: 75%;
@@ -68,27 +39,29 @@
   font-size: 24px;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  /* margin-top: 5vh; */
   color: white;
 }
-.signup-password:focus {
+
+.signin-email:focus,
+.signin-password:focus {
   outline: none;
 }
-.signup-input::placeholder,
-.signup-password::placeholder,
-.signup-name::placeholder {
+
+.signin-email::placeholder,
+.signin-password::placeholder {
   color: white;
 }
-.signup-form button {
+
+.sign-in-button {
   font-family: "Kanit", sans-serif;
   font-size: 18px;
   background-color: #1a74e2;
-  padding: 1vh 1.5vw;
+  padding: 1vh 2vw;
   margin: 5vh;
   color: white;
 }
 
-.signup-form button:hover {
+.sign-in-button:hover {
   cursor: pointer;
   background-color: #3fa0ef;
 }

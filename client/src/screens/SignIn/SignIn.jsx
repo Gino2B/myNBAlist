@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { login } from "../../services/users";
+import "./SignIn.css";
 
 const SignIn = (props) => {
   const history = useHistory();
@@ -46,36 +47,45 @@ const SignIn = (props) => {
         </button>
       );
     } else {
-      return <button type="submit">Sign In</button>;
+      return (
+        <button className="sign-in-button" type="submit">
+          Sign In
+        </button>
+      );
     }
   };
 
   const { email, password } = form;
 
   return (
-    <div className="signin-form">
-      <form onSubmit={onSignIn}>
-        <input
-          id="signin-email-input"
-          required
-          type="text"
-          name="email"
-          value={email}
-          placeholder="Enter Email"
-          onChange={handleChange}
-        />
-        <input
-          id="signin-password-input"
-          required
-          type="password"
-          name="password"
-          value={password}
-          placeholder="Password"
-          onChange={handleChange}
-        />
-        {renderError()}
-      </form>
-    </div>
+    <>
+      <div className="sign-in">Sign In</div>
+      <div>
+        <form onSubmit={onSignIn} className="signin-form">
+          <input
+            id="signin-email-input"
+            className="signin-email"
+            required
+            type="text"
+            name="email"
+            value={email}
+            placeholder="Enter Email"
+            onChange={handleChange}
+          />
+          <input
+            id="signin-password-input"
+            className="signin-password"
+            required
+            type="password"
+            name="password"
+            value={password}
+            placeholder="Password"
+            onChange={handleChange}
+          />
+          {renderError()}
+        </form>
+      </div>
+    </>
   );
 };
 
