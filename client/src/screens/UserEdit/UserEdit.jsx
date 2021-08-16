@@ -1,6 +1,7 @@
 import { useParams, Redirect } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getOneUser, updateUser } from "../../services/users";
+import "./UserEdit.css";
 
 const UserEdit = () => {
   const [user, setUser] = useState({
@@ -39,7 +40,7 @@ const UserEdit = () => {
   }
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="user-edit-form">
         <input
           className="input-user-name"
           placeholder="Name"

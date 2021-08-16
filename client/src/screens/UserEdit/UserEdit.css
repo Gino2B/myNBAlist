@@ -1,0 +1,40 @@
+.user-edit-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  width: 50vw;
+  height: 70vh;
+  margin: 0 auto;
+  margin-top: 5vh;
+}
+
+.user-edit-form img {
+  width: 20vw;
+  border-radius: 100%;
+}
+
+.input-user-name {
+  font-size: 24px;
+  color: white;
+  background-color: #101010;
+  border: 0;
+  width: 20vw;
+  text-align: center;
+}
+.input-user-image {
+  font-size: 24px;
+  color: white;
+  background-color: #101010;
+  border: 0;
+  width: 20vw;
+}
+
+.user-edit-form button {
+  font-size: 20px;
+  padding: 1vh 1vw;
+  background-color: #3fa0ef;
+  color: white;
+}
