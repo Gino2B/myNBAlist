@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { deletePlayerFromUser, getOneUser } from "../../services/users";
+import "./UserProfile.css";
 
 const UserProfile = () => {
   const [user, setUser] = useState([]);
@@ -19,18 +20,18 @@ const UserProfile = () => {
     setRemoved(!removed);
   };
   return (
-    <div>
-      <div>
+    <div className="user-profile-container">
+      <div className="user-info">
         <div>{user.name}'s Profile</div>
         <img src={`${user.image_url}`} alt={`${user.name}`} />
         <Link to={`/users/${id}/edit`}>
           <button>Edit Profile</button>
         </Link>
       </div>
-      <div>
-        <div>Favorite Players</div>
+      <div className="user-favorites">
+        <div className="fav-header">Favorite Players</div>
         {user.players?.map((player) => (
-          <section key={player.id}>
+          <section key={player.id} className="player-favorites">
             <img src={`${player.image_url}`} alt={`${player.name}`} />
             <div>{player.name}</div>
             <button onClick={() => handleRemove(player.id)}>Remove</button>
