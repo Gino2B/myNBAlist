@@ -1,7 +1,7 @@
 import { register } from "../../services/users";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-
+import "./SignUp.css";
 const SignUp = (props) => {
   const history = useHistory();
   const [registerFormData, setRegisterFormData] = useState({
@@ -53,10 +53,12 @@ const SignUp = (props) => {
   const { name, email, password, password_Confirm } = registerFormData;
 
   return (
-    <div className="signup-form">
-      <form onSubmit={handleRegister}>
+    <div>
+      <div className="signup"> Sign Up</div>
+      <form onSubmit={handleRegister} className="signup-form">
         <input
           required
+          className="signup-name"
           type="text"
           name="name"
           value={name}
@@ -65,6 +67,7 @@ const SignUp = (props) => {
         />
         <input
           required
+          className="signup-input"
           type="text"
           name="email"
           value={email}
@@ -73,6 +76,7 @@ const SignUp = (props) => {
         />
         <input
           required
+          className="signup-input"
           type="password"
           name="password"
           value={password}
@@ -81,6 +85,7 @@ const SignUp = (props) => {
         />
         <input
           required
+          className="signup-password"
           type="password"
           name="password_Confirm"
           value={password_Confirm}
