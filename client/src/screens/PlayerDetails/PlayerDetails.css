@@ -149,6 +149,9 @@
     height: 35vh;
     margin-bottom: 2vh;
   }
+  .detail-info-section {
+    width: 60vw;
+  }
   .detail-name {
     font-size: 30px;
     margin-bottom: 1.5vh;
@@ -178,8 +181,18 @@
 }
 
 @media only screen and (max-width: 375px) {
+  .detail-info {
+    flex-direction: column;
+    margin: 5vh auto;
+    width: 100vw;
+  }
+  .detail-picture-section {
+    width: 50vw;
+    margin-right: 0;
+    margin-bottom: 2vh;
+  }
   .detail-picture-section img {
-    height: 30vh;
+    height: 25vh;
     margin-bottom: 2vh;
   }
   .detail-name {
