@@ -65,3 +65,26 @@
   cursor: pointer;
   background-color: #3fa0ef;
 }
+
+@media only screen and (max-width: 768px) {
+  .signin-form {
+    width: 70vw;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .signin-email {
+    font-size: 20px;
+  }
+
+  .signin-password {
+    font-size: 20px;
+  }
+  .sign-in-button {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .signin-form {
+    width: 80vw;
+  }
+}

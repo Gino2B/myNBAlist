@@ -92,3 +92,34 @@
   cursor: pointer;
   background-color: #3fa0ef;
 }
+
+@media only screen and (max-width: 768px) {
+  .signup-form {
+    width: 70vw;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .signup-form {
+    width: 70vw;
+  }
+  .signup-name {
+    font-size: 18px;
+  }
+  .signup-input {
+    font-size: 18px;
+  }
+  .signup-password {
+    font-size: 18px;
+  }
+  .route-login {
+    font-size: 14px;
+  }
+  .signup-form button {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .signup-form {
+    width: 80vw;
+  }
+}

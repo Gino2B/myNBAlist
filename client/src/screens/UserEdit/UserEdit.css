@@ -38,3 +38,30 @@
   background-color: #3fa0ef;
   color: white;
 }
+
+@media only screen and (max-width: 768px) {
+  .input-user-name {
+    width: 50vw;
+  }
+  .user-edit-form img {
+    width: 40vw;
+  }
+  .input-user-image {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .user-edit-form {
+    width: 100vw;
+  }
+  .input-user-name {
+    width: 50vw;
+  }
+  .user-edit-form img {
+    width: 55vw;
+  }
+  .input-user-image {
+    width: 50vw;
+  }
+}
