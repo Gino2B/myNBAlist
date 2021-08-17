@@ -94,3 +94,68 @@ body {
 .section-bio {
   font-size: 22px;
 }
+@media only screen and (max-width: 768px) {
+  .home-header img {
+    height: 45vh;
+    width: 35vw;
+  }
+  .header-title {
+    font-size: 32px;
+  }
+  .header-pitch {
+    font-size: 18px;
+  }
+  .header-info button {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .header-title {
+    font-size: 24px;
+  }
+  .header-dash {
+    font-size: 45px;
+  }
+  .header-pitch {
+    font-size: 12px;
+  }
+  .header-info button {
+    font-size: 12px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+  .section-bio {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .home-header img {
+    height: 35vh;
+    width: 45vw;
+  }
+  .header-dash {
+    font-size: 36px;
+  }
+  .header-title {
+    font-size: 14px;
+  }
+  .header-pitch {
+    font-size: 10px;
+  }
+  .header-info button {
+    font-size: 10px;
+  }
+  .section-title {
+    font-size: 14px;
+  }
+  .section-bio {
+    font-size: 10px;
+  }
+  .about-section img {
+    height: 20vh;
+    display: flex;
+    align-self: center;
+  }
+}
