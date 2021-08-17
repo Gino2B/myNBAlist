@@ -78,3 +78,39 @@
   margin-left: 7vw;
   margin-right: 3vw;
 }
+
+@media only screen and (max-width: 768px) {
+  .even-player {
+    font-size: 20px;
+  }
+
+  .odd-player {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .player-header {
+    font-size: 13px;
+  }
+  .even-player {
+    font-size: 15px;
+  }
+
+  .odd-player {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .player-header {
+    font-size: 12px;
+  }
+  .even-player {
+    font-size: 12px;
+  }
+
+  .odd-player {
+    font-size: 12px;
+  }
+}
