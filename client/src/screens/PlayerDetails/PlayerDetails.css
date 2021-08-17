@@ -111,3 +111,99 @@
   cursor: pointer;
   background-color: #f08080;
 }
+
+@media only screen and (max-width: 768px) {
+  .detail-name {
+    font-size: 35px;
+    margin-bottom: 2vh;
+  }
+  .detail-team {
+    font-size: 30px;
+    margin: 2vh 0;
+  }
+
+  .detail-bio {
+    font-size: 18px;
+    margin: 2vh 0;
+  }
+  .detail-picture-section button {
+    font-size: 15px;
+  }
+  .moment-form input {
+    /* padding: 1vh 3vw; */
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    width: 30vw;
+    height: 3vh;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .detail-picture-section {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    margin-right: 5vw;
+  }
+  .detail-picture-section img {
+    height: 35vh;
+    margin-bottom: 2vh;
+  }
+  .detail-name {
+    font-size: 30px;
+    margin-bottom: 1.5vh;
+  }
+  .detail-team {
+    font-size: 25px;
+    margin: 1.5vh 0;
+  }
+  .detail-bio {
+    font-size: 14px;
+    margin: 1.5vh 0;
+  }
+  .detail-info-section button {
+    font-size: 14px;
+  }
+
+  .moment-form input {
+    /* padding: 1vh 3vw; */
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    width: 30vw;
+    height: 3vh;
+  }
+  iframe {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .detail-picture-section img {
+    height: 30vh;
+    margin-bottom: 2vh;
+  }
+  .detail-name {
+    font-size: 27px;
+    margin-bottom: 1vh;
+  }
+  .detail-team {
+    font-size: 21px;
+    margin: 1vh 0;
+  }
+  .detail-bio {
+    font-size: 12px;
+    margin: 1vh 0;
+  }
+  .detail-info-section button {
+    font-size: 12px;
+  }
+
+  .moment-form input {
+    /* padding: 1vh 3vw; */
+    font-size: 15px;
+    width: 50vw;
+  }
+  iframe {
+    width: 275px;
+  }
+}
