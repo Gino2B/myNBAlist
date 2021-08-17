@@ -75,3 +75,69 @@
   background-color: #3fa0ef;
   color: white;
 }
+
+@media only screen and (max-width: 768px) {
+  .edit-picture {
+    width: 35vw;
+  }
+
+  .edit-picture img {
+    height: 35vh;
+  }
+  .input-image {
+    font-size: 20px;
+  }
+  .input-name {
+    font-size: 35px;
+  }
+  .input-team {
+    font-size: 30px;
+  }
+  .input-bio {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .input-image {
+    font-size: 18px;
+  }
+  .input-name {
+    font-size: 30px;
+  }
+  .input-team {
+    font-size: 25px;
+  }
+  .input-bio {
+    font-size: 14px;
+  }
+  .edit-info-section button {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .edit-picture {
+    width: 30vw;
+  }
+  .edit-picture img {
+    height: 25vh;
+  }
+  .input-image {
+    font-size: 15px;
+  }
+  .input-name {
+    font-size: 27px;
+    width: 50vw;
+  }
+  .input-team {
+    font-size: 18px;
+    width: 50vw;
+  }
+  .input-bio {
+    font-size: 12px;
+  }
+  .edit-info-section button {
+    font-size: 12px;
+  }
+}
