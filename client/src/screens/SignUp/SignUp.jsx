@@ -58,7 +58,7 @@ const SignUp = (props) => {
       <div className="signup"> Sign Up</div>
       <form onSubmit={handleRegister} className="signup-form">
         <div className="route-login">
-          Already have an account? Proceed to &nbsp;
+          Already have an account? Proceed to&nbsp;
           <Link to="/login" className="route-to-login">
             login!
           </Link>
