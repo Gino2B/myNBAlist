@@ -9,6 +9,7 @@ import SignOut from "../screens/SignOut/SignOut";
 import SignIn from "../screens/SignIn/SignIn";
 import UserProfile from "../screens/UserProfile/UserProfile";
 import UserEdit from "../screens/UserEdit/UserEdit";
+import UserSearch from "../screens/UserSearch/UserSearch";
 
 const Main = (props) => {
   return (
@@ -42,6 +43,9 @@ const Main = (props) => {
       </Route>
       <Route exact path="/users/:id/edit">
         <UserEdit user={props.user} />
+      </Route>
+      <Route exact path="/users">
+        <UserSearch user={props.user} />
       </Route>
     </>
   );
